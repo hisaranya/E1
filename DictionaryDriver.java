@@ -22,6 +22,7 @@ public class DictionaryDriver extends Configured implements Tool {
       job.setJarByClass(DictionaryDriver.class);
       job.setMapperClass(DictionaryMapper.class);
       job.setReducerClass(DictionaryReducer.class);
+       //     job.setNumReduceTasks(0);
       job.setOutputKeyClass(Text.class);
       job.setOutputValueClass(Text.class);
       job.setInputFormatClass(KeyValueTextInputFormat.class);
